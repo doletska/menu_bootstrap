@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>dz</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar bg-success ">
+  <ul class="nav navbar-nav text-warning">
+    <li class="active">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+    </li>
+    <li class="active">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">About us</a>
+      <ul class="dropdown-menu">
+        <li><a>HTML</a></li>
+        <li class="divider"></li>
+        <li><a>CSS</a></li>
+        <li><a>JavaScript</a></li>
+      </ul>
+    </li>
+    <li class="active">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servieces</a>
+    </li>
+    <li class="active">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners</a>
+    </li>
+    <li class="active">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customers</a>
+    </li>
+    <li class="active">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects</a>
+    </li>
+    <li class="active">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Careers</a>
+    </li>
+    <li class="active">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="picture">
+    <hr><img class="img-responsive" src="img/dont-forget-the-cat.jpg"><hr>
+</div>
+
+
+<div class="row">
+
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-0">
+        <span class="visible-lg">
+          <form>
+            <h2 class="bg-danger text-center">Поиск Рейса</h2>
+                <div class="input-group">
+                <input  type="text" placeholder="Рейс" class="form-control input-lg">
+                </div>
+                    <label for="data1">Дата вылета</label>
+                    <input class="form-control" type="date" name="data" id="data1" required=""
+                           pattern="\d{1,2}[-.\/]\d{1,2}[-.\/]\d{2,4}">
+                      <label for="data2">Дата прилёта</label>
+                        <input class="form-control" type="date" name="data" id="data2" required=""
+                               pattern="\d{1,2}[-.\/]\d{1,2}[-.\/]\d{2,4}">
+                          <input type="button" class="btn-warning btn-lg pull-right" value="Поиск">
+          </form>
+        </span>
+        <span class="visible-md">
+                    <form>
+            <h2 class="bg-danger text-center">Поиск Рейса</h2>
+                <div class="input-group">
+                <input  type="text" placeholder="Рейс" class="form-control input-lg">
+                </div>
+                    <label for="data1">Дата вылета</label>
+                    <input class="form-control" type="date" name="data" id="data1" required=""
+                           pattern="\d{1,2}[-.\/]\d{1,2}[-.\/]\d{2,4}">
+                      <label for="data2">Дата прилёта</label>
+                        <input class="form-control" type="date" name="data" id="data2" required=""
+                               pattern="\d{1,2}[-.\/]\d{1,2}[-.\/]\d{2,4}">
+                          <input type="button" class="btn-warning btn-lg pull-right" value="Поиск">
+          </form>
+        </span>
+        <span class="visible-sm">
+          <form>
+            <h2 class="bg-danger text-center">Поиск Рейса</h2>
+                <div class="input-group">
+                <input  type="text" placeholder="Рейс" class="form-control input-lg">
+                </div>
+                    <label for="data1">Дата вылета</label>
+                    <input class="form-control" type="date" name="data" id="data1" required=""
+                           pattern="\d{1,2}[-.\/]\d{1,2}[-.\/]\d{2,4}">
+                      <label for="data2">Дата прилёта</label>
+                        <input class="form-control" type="date" name="data" id="data2" required=""
+                               pattern="\d{1,2}[-.\/]\d{1,2}[-.\/]\d{2,4}">
+                          <input type="button" class="btn-warning btn-lg pull-right" value="Поиск">
+          </form>
+        </span>
+        <span class="visible-xs">
+          <form>
+            <h2 class="bg-danger text-center">Поиск Рейса</h2>
+                <div class="input-group">
+                <input  type="text" placeholder="Рейс" class="form-control input-lg">
+                </div>
+                    <label for="data1">Дата вылета</label>
+                    <input class="form-control" type="date" name="data" id="data1" required=""
+                           pattern="\d{1,2}[-.\/]\d{1,2}[-.\/]\d{2,4}">
+                      <label for="data2">Дата прилёта</label>
+                        <input class="form-control" type="date" name="data" id="data2" required=""
+                               pattern="\d{1,2}[-.\/]\d{1,2}[-.\/]\d{2,4}">
+                          <input type="button" class="btn-warning btn-lg pull-right" value="Поиск">
+          </form>
+        </span>
+  </div>
+
+  <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+        <span class="visible-lg">
+          <table class=" table table-bordered table-hover " id="bootstrap-table">
+              <h2 class="bg-danger text-center">Расписание рейсов</h2>
+                <thead class="zagolovoc">
+                  <tr class="bg-success" id="zag">
+                    <th>№ Рейса</th>
+                    <th>Название</th>
+                    <th>время вылета</th>
+                    <th>Время прилёта</th>
+                  </tr>
+                </thead>
+                    <tbody>
+                      <tr>
+                        <td>2365</td>
+                        <td>Киев-Одеса</td>
+                        <td>20:00</td>
+                        <td>04:09</td>
+                      </tr>
+                      <tr>
+                        <td>123</td>
+                        <td>Одеса-Львов</td>
+                        <td>20:59</td>
+                        <td>03:15</td>
+                      </tr>
+                      <tr>
+                        <td>59</td>
+                        <td>Варшава-Киев</td>
+                        <td>22:00</td>
+                        <td>23:50</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Одеса-Прага</td>
+                        <td>23:00</td>
+                        <td>01:39</td>
+                      </tr>
+                    </tbody>
+          </table>
+          <div class="news">
+        <h2 class="bg-danger text-center">Наши новости</h2>
+        <div class="img_news">
+            <figure class="figure">
+                <img src="img/2cat.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                <figcaption class="figure-caption text-end">Пассажир1</figcaption>
+            </figure>
+            <figure class="figure">
+                <img src="img/images1.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                <figcaption class="figure-caption text-end">Пассажир2</figcaption>
+            </figure>
+            <figure class="figure">
+                <img src="img/images3.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                <figcaption class="figure-caption text-end">Пассажир3</figcaption>
+            </figure>
+        </div>
+    </div>
+        </span>
+        <span class="visible-md">
+          <table class=" table table-bordered table-hover " id="bootstrap-table">
+              <h2 class="bg-danger text-center">Расписание рейсов</h2>
+                <thead class="zagolovoc">
+                  <tr class="bg-success" id="zag">
+                    <th>№ Рейса</th>
+                    <th>Название</th>
+                    <th>время вылета</th>
+                    <th>Время прилёта</th>
+                  </tr>
+                </thead>
+                    <tbody>
+                      <tr>
+                        <td>2365</td>
+                        <td>Киев-Одеса</td>
+                        <td>20:00</td>
+                        <td>04:09</td>
+                      </tr>
+                      <tr>
+                        <td>123</td>
+                        <td>Одеса-Львов</td>
+                        <td>20:59</td>
+                        <td>03:15</td>
+                      </tr>
+                      <tr>
+                        <td>59</td>
+                        <td>Варшава-Киев</td>
+                        <td>22:00</td>
+                        <td>23:50</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Одеса-Прага</td>
+                        <td>23:00</td>
+                        <td>01:39</td>
+                      </tr>
+                    </tbody>
+          </table>
+          <div class="news">
+              <h2 class="bg-danger text-center">Наши новости</h2>
+                <div class="img_news">
+                    <figure class="figure">
+                      <img src="img/2cat.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                    <figcaption class="figure-caption text-end">Пассажир1</figcaption>
+                    </figure>
+                    <figure class="figure">
+                      <img src="img/images1.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                    <figcaption class="figure-caption text-end">Пассажир2</figcaption>
+                    </figure>
+                    <figure class="figure">
+                      <img src="img/images3.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                    <figcaption class="figure-caption text-end">Пассажир3</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </span>
+        <span class="visible-sm">
+          <table class=" table table-bordered table-hover " id="bootstrap-table">
+              <h2 class="bg-danger text-center">Расписание рейсов</h2>
+                <thead class="zagolovoc">
+                  <tr class="bg-success" id="zag">
+                    <th>№ Рейса</th>
+                    <th>Название</th>
+                    <th>время вылета</th>
+                    <th>Время прилёта</th>
+                  </tr>
+                </thead>
+                    <tbody>
+                      <tr>
+                        <td>2365</td>
+                        <td>Киев-Одеса</td>
+                        <td>20:00</td>
+                        <td>04:09</td>
+                      </tr>
+                      <tr>
+                        <td>123</td>
+                        <td>Одеса-Львов</td>
+                        <td>20:59</td>
+                        <td>03:15</td>
+                      </tr>
+                      <tr>
+                        <td>59</td>
+                        <td>Варшава-Киев</td>
+                        <td>22:00</td>
+                        <td>23:50</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Одеса-Прага</td>
+                        <td>23:00</td>
+                        <td>01:39</td>
+                      </tr>
+                    </tbody>
+          </table>
+          <div class="news">
+              <h2 class="bg-danger text-center">Наши новости</h2>
+                <div class="img_news">
+                    <figure class="figure">
+                      <img src="img/2cat.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                    <figcaption class="figure-caption text-end">Пассажир1</figcaption>
+                    </figure>
+                    <figure class="figure">
+                      <img src="img/images1.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                    <figcaption class="figure-caption text-end">Пассажир2</figcaption>
+                    </figure>
+                    <figure class="figure">
+                      <img src="img/images3.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                    <figcaption class="figure-caption text-end">Пассажир3</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </span>
+        <span class="visible-xs">
+          <table class=" table table-bordered table-hover " id="bootstrap-table">
+              <h2 class="bg-danger text-center">Расписание рейсов</h2>
+                <thead class="zagolovoc">
+                  <tr class="bg-success" id="zag">
+                    <th>№ Рейса</th>
+                    <th>Название</th>
+                    <th>время вылета</th>
+                    <th>Время прилёта</th>
+                  </tr>
+                </thead>
+                    <tbody>
+                      <tr>
+                        <td>2365</td>
+                        <td>Киев-Одеса</td>
+                        <td>20:00</td>
+                        <td>04:09</td>
+                      </tr>
+                      <tr>
+                        <td>123</td>
+                        <td>Одеса-Львов</td>
+                        <td>20:59</td>
+                        <td>03:15</td>
+                      </tr>
+                      <tr>
+                        <td>59</td>
+                        <td>Варшава-Киев</td>
+                        <td>22:00</td>
+                        <td>23:50</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Одеса-Прага</td>
+                        <td>23:00</td>
+                        <td>01:39</td>
+                      </tr>
+                    </tbody>
+          </table>
+          <div class="news">
+              <h2 class="bg-danger text-center">Наши новости</h2>
+                <div class="img_news">
+                    <figure class="figure">
+                      <img src="img/2cat.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                    <figcaption class="figure-caption text-end">Пассажир1</figcaption>
+                    </figure>
+                    <figure class="figure">
+                      <img src="img/images1.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                    <figcaption class="figure-caption text-end">Пассажир2</figcaption>
+                    </figure>
+                    <figure class="figure">
+                      <img src="img/images3.jpg" class="figure-img img-fluid rounded img-thumbnail" alt="...">
+                    <figcaption class="figure-caption text-end">Пассажир3</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </span>
+  </div>
+</div>
+<hr>
+</body>
+<foter>
+    <div class="footer">
+        <img class="img-rounded" src="img/pngwing.com.png">
+        <img class="img-rounded" src="img/logo_A.png">
+        <img class="img-rounded" src="img/pngwing.com.png">
+        <img class="img-rounded" src="img/logo_A.png">
+        <img class="img-rounded" src="img/pngwing.com.png">
+        <img class="img-rounded" src="img/logo_A.png">
+        <img class="img-rounded" src="img/pngwing.com.png">
+    </div>
+</foter>
+</html>
